@@ -44,4 +44,8 @@ while True:
     final_output = cv2.addWeighted(res1, 1, res2, 1, 0)
     cv2.imshow("camera", final_output)
     k = cv2.waitKey(10)
-    
+    if k == 27:
+        break
+video.release()
+cv2.destroyAllWindows()
+
